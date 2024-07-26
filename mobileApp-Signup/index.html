@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Signup Flow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container welcome-container active">
+            <h2>Welcome</h2>
+            <p>Please login or sign up to continue using our app.</p>
+            <a href="#"><img src="Images/welcome.jpeg" alt="Welcome"></a>
+            <div class="social-login">
+                <p>Enter via Social Networks</p>
+                <div class="social-icons">
+                    <a href="#"><img src="Images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="Images/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="form-switch">
+                <a href="#" class="switch-form" data-target="signup">Sign up</a>
+                <a href="#" class="switch-form" data-target="login">Login</a>
+            </div>
+        </div>
+
+        <div class="form-container signup-container">
+            <h2>Sign Up</h2>
+            <p>Please register with email and sign up to continue using our app.</p>
+            <div class="social-login">
+                <p>Enter via Social Networks</p>
+                <div class="social-icons">
+                    <a href="#"><img src="Images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="Images/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <form action="#">
+                <input type="email" placeholder="jhon.doe@gmail.com" required>
+                <input type="password" placeholder="Password" required>
+                <div class="policy">
+                    <input type="checkbox" id="policy" required>
+                    <label for="policy">I agree with privacy policy</label>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <div class="form-switch">
+                <a href="#" class="switch-form" data-target="login">Login</a>
+            </div>
+        </div>
+
+        <div class="form-container login-container">
+            <h2>Login Now</h2>
+            <p>Please login to continue using our app.</p>
+            <div class="social-login">
+                <p>Enter via Social Networks</p>
+                <div class="social-icons">
+                    <a href="#"><img src="Images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="Images/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+            <form action="#">
+                <input type="email" placeholder="jhon.doe@gmail.com" required>
+                <input type="password" placeholder="Password" required>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <button type="submit">Login</button>
+            </form>
+            <div class="form-switch">
+                <a href="#" class="switch-form" data-target="signup">Sign up</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

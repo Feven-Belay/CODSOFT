@@ -11,4 +11,4 @@ This project implements a responsive mobile app signup flow with a welcome page,
 ### Project Directories
 - Index.html- contains the main codes for the project.
 - /Images- contains the images used for the project.
-- The other files show the outputs of the projects.
+- /Outputs- shows the output of the project.

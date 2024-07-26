@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Menu</h1>
+        <input type="text" id="search" placeholder="Search...">
+        <div class="cart-icon">
+            <img src="Images/cart.jpg" alt="Cart">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#all">All</a></li>
+            <li><a href="#breakfast">Breakfast</a></li>
+            <li><a href="#lunch">Lunch</a></li>
+            <li><a href="#treats">Treats</a></li>
+            <li><a href="#dessert">Dessert</a></li>
+            <li><a href="#drinks">Drinks</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="all" class="menu-section">
+            <div class="dish" onclick="showDetails('pear-orange')">
+                <img src="Images/pear-and-orange.jpg" alt="Pear & Orange">
+                <div class="details">
+                    <h2>Pear & Orange</h2>
+                    <p>20 min &#9733; 4.8</p>
+                    <p>$25.00</p>
+                </div>
+            </div>
+            <div class="dish" onclick="showDetails('meat-mushrooms')">
+                <img src="Images/Beef-and-Mushroom.jpg" alt="Meat & Mushrooms">
+                <div class="details">
+                    <h2>Meat & Mushrooms</h2>
+                    <p>30 min &#9733; 5.0</p>
+                    <p>$37.00</p>
+                </div>
+            </div>
+            <div class="dish" onclick="showDetails('egg-bread')">
+                <img src="Images/Egg-Bread.jpg" alt="Egg & Bread">
+                <div class="details">
+                    <h2>Egg & Bread</h2>
+                    <p>10 min &#9733; 4.7</p>
+                    <p>$25.00</p>
+                </div>
+            </div>
+            <div class="dish" onclick="showDetails('sweet-pancake')">
+                <img src="Images/Pancake.jpg" alt="Sweet pancake">
+                <div class="details">
+                    <h2>Sweet pancake</h2>
+                    <p>10 min &#9733; 4.9</p>
+                    <p>$13.00</p>
+                </div>
+            </div>
+            <!-- Add more dishes here -->
+        </section>
+    </main>
+    <div id="dish-details" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDetails()">&times;</span>
+            <img id="dish-image" src="" alt="Dish Image">
+            <h2 id="dish-title"></h2>
+            <p id="dish-time"></p>
+            <p id="dish-price"></p>
+            <p id="dish-description"></p>
+            <button id="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

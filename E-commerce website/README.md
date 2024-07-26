@@ -9,3 +9,8 @@ Categories Section: Displays different product categories with images.
 Brand Carousel: Highlights featured brands with a carousel effect.
 Featured Products: Showcases selected products with images, descriptions, and prices.
 Navigation: Easy navigation with a top menu and footer.
+
+### Project Directories
+Index.html- contains the main codes for the project.
+/Images- contains the images used for the project.
+/Outputs- shows the output of the project.
